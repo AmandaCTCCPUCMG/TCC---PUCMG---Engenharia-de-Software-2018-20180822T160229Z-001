@@ -1,0 +1,39 @@
+<div ng-controller="gestaoCliente">
+
+<!-- Formulário de atualização de dados. Foram utilizados máscaras para alguns campos, angular e bootstrap para a criação e execução -->
+
+<form method="put" role="alterar">
+
+	<div class="panel-title">Alterar dados do  Usuário</div>
+
+	    <label form="inputNome">Nome:</label>
+		<input type="text" ng-model="UserLogin.nome" name="nome" class="form-control input-lg" required autofocus>
+		
+		<label form="inputCpf">CPF:</label>
+		<input type="text" ui-mask="999.999.999-99" ng-model="UserLogin.cpf" name="cpf" class="form-control input-lg" required>
+	    
+	    <label form="inputEndereco">Endereço:</label>
+		<input type="text" ng-model="UserLogin.endereco" name="endereco" class="form-control input-lg" required>
+		
+		<label form="inputEstado">Estado:</label>
+		<input type="text" ng-model="UserLogin.estado" name="estado" class="form-control input-lg" required>
+				
+		<label form="inputMunicipio">Município:</label>
+		<input type="text" ng-model="UserLogin.municipio" name="municipio" class="form-control input-lg" required>
+				
+		<label form="inputTelefone">Telefone:</label>
+		<input type="text" ng-model="UserLogin.telefone" name="telefone" ui-mask="(99)99999-9999" class="form-control input-lg" required>
+				
+		<label form="inputEmail">E-mail:</label>
+		<input type="email" ng-model="UserLogin.email" name="email" class="form-control input-lg" disabled="email">
+		
+		<label form="inputSenha">Senha:</label>
+		<input type="password" ng-model="UserLogin.senha" name="Senha" class="form-control input-lg" required>
+
+        <div class="col-md-12">
+	      <a href="#!gestaoCliente" class="btn btn-danger">Cancelar</a>
+	      <button type="submit" ng-click="updateUsuario(UserLogin)" class="btn btn-primary">Alterar</button>
+	    </div>
+
+</form>
+</div>

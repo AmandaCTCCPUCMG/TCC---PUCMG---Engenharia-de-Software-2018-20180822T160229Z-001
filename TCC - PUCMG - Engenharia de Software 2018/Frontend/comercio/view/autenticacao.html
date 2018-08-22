@@ -1,0 +1,16 @@
+<form method="post" ng-controller="loginController" role="login">
+
+<!-- Página de Autenticação. Foram utilizados angular e bootstrap para a criação e execução -->	
+
+	<div class="panel-title">Login</div>
+
+	    <label form="inputEmail" class="sr-only">E-mail:</label>
+		<input type="email" ng-model="Login.usuario.email" class="form-control input-lg"  placeholder="E-mail" required autofocus>
+		<label form="inputSenha" class="sr-only">Senha:</label>
+		<input type="password" ng-model="Login.usuario.senha" class="form-control input-lg" placeholder="Senha" required>
+		
+		<div class="form-links">
+			<span class="glyphicon glyphicon-user text-primary"></span> <a href="#!cadastro">Cadastro de usuários</a>
+		</div>
+		<button type="submit" ng-click="verificaLogin(Login)" class="btn btn-primary">Enviar</button>		
+</form>

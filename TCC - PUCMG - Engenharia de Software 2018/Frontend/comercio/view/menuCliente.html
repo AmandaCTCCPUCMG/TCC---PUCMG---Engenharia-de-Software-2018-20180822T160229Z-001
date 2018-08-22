@@ -1,0 +1,22 @@
+<form method="post" role="gestaoCliente" ng-controller="gestaoCliente">
+
+<!-- Menu do sistema. Foram utilizados angular e bootstrap para a criação e execução -->
+
+    <!-- Chamada do topo -->
+    <div ng-include="'./view/topo.html'"></div>
+
+
+    <!-- Exibição do menu com opções de acesso -->
+	<div class="topo">Menu</div>
+
+	    <div class="container">
+
+		  <div class="btn-group-vertical">
+		    <a href="#" class="btn btn-primary" disabled="disabled">Pesquisar Produtos</a>
+		    <a href="#" class="btn btn-primary" disabled="disabled">Visualizar Carrinho</a>
+		    <a href="#" class="btn btn-primary" disabled="disabled">Efetuar Pagamento</a>
+		    <a href="#" class="btn btn-primary" disabled="disabled">Histórico de Pedidos</a>
+		    <a href="#!gestaoCliente" class="btn btn-primary">Gerenciar Perfil</a>
+		</div>
+	</div>
+</form>

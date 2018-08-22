@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=1,initial-scale=1,user-scalable=1" />
+	<title>SIS Commerce</title>
+	
+	<link rel="stylesheet" type="text/css" href="./bootstrap/css/googleapis.css" />
+	<link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="./css/estilo.css" />
+
+<!-- Página inicial do sistema -->	
+	
+</head>
+<body ng-app="app">
+	<section class="container">
+			<section class="login-form">
+				<div class="panel panel-default">
+					<div class="panel-heading" ng-click="removeCookies()">
+						<a href="#!autenticacao">SIS Commerce</a></div>
+					<div class="panel-body">
+                        <!-- Onde são chamadas todas as views -->
+					    <div ng-view></div>
+
+					</div>
+				</div>
+			</section>
+	</section>
+
+	<!-- Carregamento dos scripts, views, models -->
+	
+	<script src="./bootstrap/js/jquery.min.js"></script>
+    <script src="./bootstrap/js/bootstrap.js"></script>
+	<script src="./bootstrap/js/bootstrap.min.js"></script>
+	<script src="./bootstrap/js/angular.min.js"></script>
+	<script src="./bootstrap/js/angular-ui-mask.js"></script>
+	<script src="./bootstrap/js/angular-route.min.js"></script>
+	<script src="./bootstrap/js/angular-resource.min.js"></script>
+	<script src="./bootstrap/js/angular-cookies.js"></script>
+	<script type="text/javascript" src="./viewModel/app.js"></script>
+	<script type="text/javascript" src="./viewModel/emailmodelo.controle.js"></script>
+	<script type="text/javascript" src="./viewModel/rotasTemplates.js"></script>
+	<script type="text/javascript" src="./model/cadastroModel.js"></script>
+	<script type="text/javascript" src="./model/loginModel.js"></script>
+	<script type="text/javascript" src="./model/usuarioModel.js"></script>
+		
+</body>
+</html>

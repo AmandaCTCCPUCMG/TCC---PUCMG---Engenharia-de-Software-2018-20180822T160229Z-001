@@ -1,0 +1,67 @@
+<form method="post" role="gestaoCliente" ng-controller="gestaoCliente">
+
+	<!-- Página de visualização de dados. Foram utilizados angular e bootstrap para a criação e execução -->
+    
+    <!-- Chamada do topo -->
+    <div ng-include="'./view/topo.html'"></div>
+
+
+    <!-- Exibição dos dados do usuário logado no sistema -->
+	<div class="topo">Gerenciar Perfil</div>
+	
+	<div class="clear"> </div>
+
+	<a href="#!menuCliente" class="btn btn-warning btn-sm">Menu</a>
+
+	    <div class="table-responsive-sm">         
+		  <table class="table">
+		    <thead>
+		      <tr>
+		        <th>Nome</th>
+		        <th>Município</th>
+		      </tr>
+		    </thead>
+		    <tbody>
+		      <tr>
+		        <td>{{UserLogin.nome}}</td>
+		        <td>{{UserLogin.municipio}}</td>
+		      </tr>
+		      <tr>
+		        <th>CPF</th>
+		        <th>Telefone</th>
+		      </tr>
+		    </thead>
+		    <tbody>
+		      <tr>
+		        <td>{{UserLogin.cpf}} </td>
+		        <td>{{UserLogin.telefone}}</td>
+		      </tr>
+		      <tr>
+		        <th>Endereço</th>
+		        <th>E-mail</th>
+		      </tr>
+		    </thead>
+		    <tbody>
+		      <tr>
+		        <td>{{UserLogin.endereco}}</td>
+		        <td>{{UserLogin.email}}</td>
+		      </tr>
+		      <tr>
+		        <th>Estado</th>
+		        <th>Senha</th>
+		      </tr>
+		    </thead>
+		    <tbody>
+		      <tr>
+		        <td>{{UserLogin.estado}}</td>
+		        <td>{{UserLogin.senha}}</td>
+		      </tr>
+		    </tbody>
+		  </table>
+       </div>
+       <div class="col-md-12">
+	      <a href="#!alterarDadosUsuario" class="btn btn-success">Alterar</a>
+	      <button type="button" ng-click="removeUsuario(UserLogin.id)" class="btn btn-danger">Excluir</button>
+	   </div>
+
+</form>

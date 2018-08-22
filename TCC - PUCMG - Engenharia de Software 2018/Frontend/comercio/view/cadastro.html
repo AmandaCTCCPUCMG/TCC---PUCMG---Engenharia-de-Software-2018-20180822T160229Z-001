@@ -1,0 +1,38 @@
+<div ng-controller="cadUsuario">
+
+
+<form method="post" role="cadastro">
+
+	<div class="panel-title">Cadastro de Usuários</div>
+
+	    <label form="inputNome">Nome:</label>
+		<input type="nome" ng-blur ng-model="Ocorrencia.nome" class="form-control input-lg" required autofocus>
+		
+		<label form="inputCpf">CPF:</label>
+		<input type="cpf" ng-blur ng-model="Ocorrencia.cpf" ui-mask="999.999.999-99" class="form-control input-lg" required>
+	    
+	    <label form="inputEndereco">Endereço:</label>
+		<input type="endereco" ng-blur ng-model="Ocorrencia.endereco" class="form-control input-lg" required>
+		
+		<label form="inputEstado">Estado:</label>
+		<input type="estado" ng-blur ng-model="Ocorrencia.estado" class="form-control input-lg" required>
+				
+		<label form="inputMunicipio">Município:</label>
+		<input type="municipio" ng-blur ng-model="Ocorrencia.municipio" class="form-control input-lg" required>
+				
+		<label form="inputTelefone">Telefone:</label>
+		<input type="telefone" ng-blur ng-model="Ocorrencia.telefone" ui-mask="(99)99999-9999" class="form-control input-lg" required>
+				
+		<label form="inputEmail">E-mail:</label>
+		<input type="email" ng-blur="cadastroExistente(Ocorrencia)" EmailController ng-model="Ocorrencia.email" class="form-control input-lg" required>
+		
+		<label form="inputSenha">Senha:</label>
+		<input type="password" ng-blur ng-model="Ocorrencia.senha" class="form-control input-lg" required-->
+
+        <div class="col-md-12">
+	      <a href="#!autenticacao" class="btn btn-danger">Cancelar</a>
+	      <button type="submit" ng-click="insert(Ocorrencia)" class="btn btn-primary">Salvar</button>
+	    </div>   
+
+</form>
+</div>
